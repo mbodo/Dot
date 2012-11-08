@@ -117,6 +117,8 @@
    nnoremap <silent> <F8> :TlistToggle<CR>
    " Tab navigation
    nmap <C-S-[> gT
+   nmap SSA :wa<CR>:mksession!
+   nmap SO :wa<CR>:so
 "
 " }
 
