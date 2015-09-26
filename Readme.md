@@ -1,2 +1,1 @@
-* .bashrc
-* .vimrc
+Collection of configuration files
