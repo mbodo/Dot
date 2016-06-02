@@ -12,6 +12,7 @@ export PATH="${PATH}:/opt/gradle/bin"
 alias la='ls --color=auto -lah'
 alias so='source ~/.bashrc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
+alias ds='ps -sch' # Display summarized size of directory in (e.g kB, M, G)
 
 # Pacman alias examples
 alias pacrep="pacman -Si"           # Display information about a given package in the repositories
