@@ -12,7 +12,7 @@ export PATH="${PATH}:/opt/gradle/bin"
 alias la='ls --color=auto -lah'
 alias so='source ~/.bashrc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
-alias ds='ps -sch' # Display summarized size of directory in (e.g kB, M, G)
+alias ds='du -sch' # Display summarized size of directory in (e.g kB, M, G)
 alias tarc='tar cvf' # Creating an uncompressed tar archive using option (e.g tar cvf archive_name.tar dirname/)
 alias tarcz='tar cvzf' # Creating a tar gzipped archive using option cvzf (e.g tar cvzf archive_name.tar.gz)
 alias tarx='tar xvf' # Extract a tar file using option x (e.g tar xvf archive_name.tar)
