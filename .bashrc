@@ -7,9 +7,11 @@
 
 # Exports
 export PATH="${PATH}:/opt/gradle/bin"
+export VAGRANT_HOME="/share/.vagrant.d"
 
 # Common aliases
 alias la='ls --color=auto -lah'
+alias ll='la' #Use same as la alias
 alias so='source ~/.bashrc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 
