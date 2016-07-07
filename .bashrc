@@ -21,8 +21,9 @@ alias tarx='tar xvf' # Extract a tar file using option x (e.g tar xvf archive_na
 alias tarxz='tar xvfz' # Extract a gzipped tar archive ( *.tar.gz ) (e.g  tar xvfz archive_name.tar.gz)
 alias tart='tar tvf' # View the tar archive file content without extracting (e.g tar tvf archive_name.tar)
 alias tartz='tar tvfz' # View the *.tar.gz file content without extracting (e.g tar tvfz archive_name.tar.gz)
+alias netstatp='netstat -plnt' # Display tcp ports with process PIDs without resolving a names
 
-
+ 
 # Pacman alias examples
 alias pacrep="pacman -Si"           # Display information about a given package in the repositories
 alias pacreps="pacman -Ss"          # Search for package(s) in the repositories
