@@ -22,6 +22,7 @@ alias tarxz='tar xvfz' # Extract a gzipped tar archive ( *.tar.gz ) (e.g  tar xv
 alias tart='tar tvf' # View the tar archive file content without extracting (e.g tar tvf archive_name.tar)
 alias tartz='tar tvfz' # View the *.tar.gz file content without extracting (e.g tar tvfz archive_name.tar.gz)
 alias netstatp='netstat -plnt' # Display tcp ports with process PIDs without resolving a names
+alias netstata='netstat -aentplF'# Display (a)all listening sockets, (e)with extended information, (n)numeric, (t)tcp, (p)pid, (l)listening, (F)Forwarding information 
 alias sudok='sudo -K' # Clear sudo users credentials cache
 
  
