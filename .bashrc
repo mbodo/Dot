@@ -7,6 +7,7 @@
 
 # Exports
 export PATH="${PATH}:/opt/gradle/bin"
+export HISTCONTROL="ignoreboth"
 export VAGRANT_HOME="/share/.vagrant.d"
 
 # Common aliases
