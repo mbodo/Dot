@@ -25,7 +25,7 @@ alias tartz='tar tvzf' # View the *.tar.gz file content without extracting (e.g 
 alias netstatp='netstat -plnt' # Display tcp ports with process PIDs without resolving a names
 alias netstata='netstat -aentplF' # Display (a)all listening sockets, (e)with extended information, (n)numeric, (t)tcp, (p)pid, (l)listening, (F)Forwarding information 
 alias sudok='sudo -K' # Clear sudo users credentials cache
-
+alias ssh='TERM=screen ssh' # Set TERM to screen for tmux compatibility
  
 # Pacman alias examples
 alias pacrep="pacman -Si"           # Display information about a given package in the repositories
