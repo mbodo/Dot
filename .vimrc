@@ -61,6 +61,21 @@ Plugin 'vim-airline/vim-airline-themes'
 " Vim dracula theme
 Plugin 'dracula/vim'
 
+" vim-systemd-syntax
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
+
+" Vim dockerfile
+Plugin 'ekalinin/dockerfile.vim'
+
+" Vim 8 only plugins
+if v:version >= 800
+   " Vim8 async
+   Plugin 'prabirshrestha/async.vim'
+
+   " Vim8 vim language server protocol
+   Plugin 'prabirshrestha/vim-lsp'
+endif
+
 call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -278,6 +293,12 @@ nnoremap <leader>to :tabonly<cr>
 nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>tm :tabmove 
 nnoremap <leader>t<leader> :tabnext 
+
+" Useful mappings for managing quickfix
+nnoremap <leader>co :copen<cr>
+nnoremap <leader>cl :cnext<cr>
+nnoremap <leader>ch :cprev<cr>
+nnoremap <leader>cc :cclose<cr>
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
