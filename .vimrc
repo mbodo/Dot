@@ -467,3 +467,27 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Python
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup __python__
+  au!
+  au BufRead,BufNewFile *.py map <F3> :!python3 %<cr>
+  au BufRead,BufNewFile *.py map <F4> :LspDocumentDiagnostics<cr>
+  au BufRead,BufNewFile *.py map <F5> :LspHover<cr>
+  au BufRead,BufNewFile *.py map <F12> <C-W><C-Z>
+  au BufRead,BufNewFile *.py imap <F12> <C-O><C-W><C-Z>
+  au BufRead,BufNewFile *.py imap <C-Space> <C-X><C-O>
+  au BufRead,BufNewFile *.py setlocal omnifunc=lsp#complete
+  au BufRead,BufNewFile *.py setlocal completeopt=longest,menuone
+augroup END
+
+" Python language server
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
