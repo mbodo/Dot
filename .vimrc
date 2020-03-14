@@ -67,6 +67,9 @@ Plugin 'Matt-Deacalion/vim-systemd-syntax'
 " Vim dockerfile
 Plugin 'ekalinin/dockerfile.vim'
 
+" Vim bats
+Plugin 'aliou/bats.vim'
+
 " Vim 8 only plugins
 if v:version >= 800
    " Vim8 async
@@ -75,6 +78,18 @@ if v:version >= 800
    " Vim8 vim language server protocol
    Plugin 'prabirshrestha/vim-lsp'
 endif
+
+" vim-jsonnet
+Plugin 'google/vim-jsonnet'
+
+" Dir-Diff
+Plugin 'DirDiff.vim'
+
+" vim-unimpaired
+Plugin 'tpope/vim-unimpaired'
+
+" vim-surround
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
